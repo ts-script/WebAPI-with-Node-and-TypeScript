@@ -1,0 +1,40 @@
+{
+  "name": "webapi-with-node-and-typescript",
+  "version": "1.0.0",
+  "description": "An example of a WebAPI using Node.js with Express and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run tsc & npm run nodemon",
+    "nodemon": "nodemon dist",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ts-script/WebAPI-with-Node-and-TypeScript.git"
+  },
+  "keywords": [
+    "WebApi",
+    "Nodejs",
+    "Express",
+    "TypeScript"
+  ],
+  "author": "Tom Schalbar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ts-script/WebAPI-with-Node-and-TypeScript/issues"
+  },
+  "homepage": "https://github.com/ts-script/WebAPI-with-Node-and-TypeScript#readme",
+  "devDependencies": {
+    "@types/express": "4.11.1",
+    "@types/node": "9.4.6",
+    "nodemon": "1.15.0",
+    "typescript": "2.7.2"
+  },
+  "dependencies": {
+    "express": "4.16.2",
+    "reflect-metadata": "0.1.12",
+    "routing-controllers": "0.7.6"
+  }
+}
