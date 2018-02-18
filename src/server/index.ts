@@ -3,16 +3,14 @@ import { Application} from 'express';
 import { createExpressServer } from 'routing-controllers';
 
 /* CONTROLLERS */
-import { FoodController } from '../controllers/food.controller';
+import { CONTROLLERS } from '../controllers/index';
 
 export class ApiServer {
     public app: Application;
 
     constructor() {
         this.app = createExpressServer({
-            controllers: [
-                FoodController
-            ]
+            controllers: CONTROLLERS
         })
     }
 
