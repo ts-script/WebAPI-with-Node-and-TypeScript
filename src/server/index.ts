@@ -1,15 +1,19 @@
 import 'reflect-metadata';
 import { Application} from 'express';
-import express from 'express';
+import { createExpressServer } from 'routing-controllers';
 
-import { SecurityTokenController } from '../securityTokenService/controllers/securityToken.controller';
+/* CONTROLLERS */
+import { FoodController } from '../controllers/food.controller';
 
 export class ApiServer {
-
     public app: Application;
 
     constructor() {
-        this.app = express();
+        this.app = createExpressServer({
+            controllers: [
+                FoodController
+            ]
+        })
     }
 
     public start(port: number): void {
