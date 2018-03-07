@@ -1,5 +1,5 @@
-import { FoodController } from './food.controller';
+import { TodoController } from './todo.controller';
 
 export const CONTROLLERS = [
-    FoodController,
+    TodoController
 ];

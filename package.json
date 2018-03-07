@@ -36,6 +36,7 @@
   "dependencies": {
     "express": "4.16.2",
     "reflect-metadata": "0.1.12",
-    "routing-controllers": "0.7.6"
+    "routing-controllers": "0.7.6",
+    "typedi": "0.7.1"
   }
 }
